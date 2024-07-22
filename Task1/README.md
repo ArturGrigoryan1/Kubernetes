@@ -1,4 +1,4 @@
-# Project Name
+# Our task 1
 
 This project demonstrates how to deploy a Kubernetes pod and service using `kubectl`.
 
