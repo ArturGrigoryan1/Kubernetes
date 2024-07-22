@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: external
+  namespace: external-namespace
+spec:
+  type: ExternalName
+  externalName: www.google.com
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: my-app3
