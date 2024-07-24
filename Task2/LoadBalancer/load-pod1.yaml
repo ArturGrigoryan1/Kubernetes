@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-1
+  labels:
+    app: my-load-app
+spec:
+  containers:
+  - name: my-load-container
+    image: nginx
+    ports:
+      - containerPort: 80
+    lifecycle:
+        postStart:
+          exec:
+            command: ['sh', '-c', 'echo "1" > /usr/share/nginx/html/index.html']
