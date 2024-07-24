@@ -54,12 +54,4 @@ To remove the setup, delete the resources:
   kubectl delete -f ipaddresspool.yaml
   kubectl delete -f https://raw.githubusercontent.com/metallb/metallb/v0.11.0/manifests/metallb.yaml
   kubectl delete -f https://raw.githubusercontent.com/metallb/metallb/v0.11.0/manifests/namespace.yaml
-
-
-
-
-
-
-
-
-
+   ```
