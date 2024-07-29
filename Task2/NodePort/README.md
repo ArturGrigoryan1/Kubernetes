@@ -1,4 +1,4 @@
-# Kubernetes NodePort Service Example
+# Task 2 with NodePort
 
 This repository provides configurations to deploy a Kubernetes Namespace, Pod, and NodePort Service.
 
