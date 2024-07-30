@@ -47,17 +47,17 @@ In the provided configuration, `imagePullPolicy: IfNotPresent` means that Kubern
    Apply the configuration using `kubectl`:
    ```sh
    kubectl apply -f <path-to-your-cj.yaml>
-2.Verify the CronJob:
+2.**Verify the CronJob**:
 Check the status of the CronJob:
 ```sh
 kubectl get cronjobs
 ```
-3.View Job Execution:
+3.**View Job Execution**:
 Check the jobs created by the CronJob:
 ```sh
 kubectl get jobs --selector=job-name=<cronjob-name>
 ```
-4.View Pod Logs:
+4.**View Pod Logs**:
 To see the output from the CronJob, find the corresponding Pod and view its logs:
 ```sh
 kubectl get pods --selector=job-name=<cronjob-name>
