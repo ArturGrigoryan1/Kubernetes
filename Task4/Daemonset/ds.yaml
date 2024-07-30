@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: my-daemonset
+spec:
+  selector:
+    matchLabels:
+      app: my-daemon
+  template:
+    metadata:
+      labels:
+        app: my-daemon
+    spec:
+      containers:
+      - name: my-container
+        image: busybox
+        command:
+        - /bin/sh
+        - -c
+        - echo "Hello from DaemonSet"
